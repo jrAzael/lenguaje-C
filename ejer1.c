@@ -1,15 +1,17 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
 
-int main (){
-int x =17,y;
-int *p;
-p=&x;
-printf("el valor de x es %d\n",*p);
-y=*p+3;
-printf("el valor de y es %d\n",y);
-}
-//investigar como se calculan los ciclos de reloj en un codigo de lenjuage c
-//medir los cilcos de reloj al abrir su editor de textos 
+    int i [10], x;
+    float f [10], y;
 
-//eliminar el pak de su crush y eliminarlo de papelera de reciclaje y rescatarlo 
-//van eliminar el pack de su crush de usb y lo van a rescatar 
+    int main (void){
+        printf("\tEntero\t\tFlotante\n\n");
+        for (x=0; x<10; x++){
+            printf("Elemento %d:\t%d\t\t%d\n", x, &i[x], &f[x]);
+
+        }
+        return 0;
+
+    }
