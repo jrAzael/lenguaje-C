@@ -1,17 +1,15 @@
+
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <math.h>
+struct CD{
+char titulo[100];
+char artista[50];
 
-    int i [10], x;
-    float f [10], y;
+};
+int main (void){
+    struct CD cd1;
+ printf ("ingresa el titulo: ");
+ scanf("%s",&cd1);  
 
-    int main (void){
-        printf("\tEntero\t\tFlotante\n\n");
-        for (x=0; x<10; x++){
-            printf("Elemento %d:\t%d\t\t%d\n", x, &i[x], &f[x]);
-
-        }
-        return 0;
-
-    }
+ printf("%s\n",cd1.titulo);
+ return 0; 
+}
